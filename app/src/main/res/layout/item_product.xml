@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <TextView
+        android:id="@+id/item_product_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="5dp"
+        android:drawableStart="@mipmap/iv_men"
+        android:gravity="center"
+        android:text="热门借款"
+        android:textSize="18sp"
+        android:drawableLeft="@mipmap/iv_men" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/item_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/item_logo"
+            android:text="身份证"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/item_logo" />
+
+        <TextView
+            android:id="@+id/item_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@id/item_logo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="成功率："
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/item_logo" />
+
+        <com.xinhe.miaodai.view.YStarView
+            android:id="@+id/ystarview"
+            android:layout_width="120dp"
+            android:layout_height="16dp"
+            android:layout_below="@id/item_name"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/item_describe" />
+
+
+        <TextView
+            android:id="@+id/item_btn_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="1904人已申请"
+            android:textSize="13sp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_toEndOf="@id/item_logo"
+            android:id="@+id/item_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_logo"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text=" 房车保单有其一，额度三万起"
+            android:layout_toRightOf="@id/item_logo" />
+
+    </RelativeLayout>
+</LinearLayout>

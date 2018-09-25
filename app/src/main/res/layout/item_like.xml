@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/item_like_logo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:src="@mipmap/logo" />
+
+    <TextView
+        android:id="@+id/item_like_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/item_like_logo"
+        android:layout_toRightOf="@+id/item_like_logo"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/item_like_name"
+        android:id="@+id/item_like_edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/item_like_logo"
+        android:layout_toRightOf="@+id/item_like_logo"
+        android:text="额度："
+        android:textColor="@color/grey_b2b2b2"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/item_like_name"
+        android:id="@+id/item_like_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/item_like_edu"
+        android:layout_toRightOf="@+id/item_like_edu"
+        android:text="2000-3000"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textColor="#ED8C5A"
+        android:textSize="14sp" />
+</RelativeLayout>
